@@ -3,10 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Lagit push -u origin mainnding Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1e3a8a, #2563eb);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-section .cta-buttons a {
+            margin: 10px;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            background: #2563eb;
+            border-radius: 25px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .hero-section .cta-buttons a:hover {
+            background: #1e3a8a;
+        }
+
+        .moving-shapes {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: move-shape 10s infinite alternate;
+        }
+
+        @keyframes move-shape {
+            from {
+                transform: translateY(0) translateX(0);
+            }
+            to {
+                transform: translateY(50px) translateX(50px);
+            }
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>
+    <div class="logo">Kadopia</div>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero-section">
+    <div class="moving-shapes"></div>
+    <h1>Turning Desires Into Gifts</h1>
+    <p>Your wishlist platform designed to connect and celebrate.</p>
+    <div class="cta-buttons">
+        <a href="#">Get Started</a>
+        <a href="#">Learn More</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Kadopia. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
